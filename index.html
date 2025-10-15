@@ -250,15 +250,12 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-	드론을 이용한 광역 모니터링은 별도의 인프라 구축 없이도 넓은 지역을 신속하게 관측할 수 있어 재난 관리, 환경 감시, 농업 모니터링 등 다양한 분야에서 활용되고 있다. 
-	그러나 드론이 수집하는 데이터는 대량의 고해상도 이미지로 구성되어 있어 전송 속도의 한계와 통합 뷰 생성을 위한 복잡한 연산으로 인해 많은 제약이 따른다. 
-	대량의 고해상도 이미지의 경우 큰 용량으로 인해 저장 및 전송에 많은 시간이 소요되며, 통합 뷰 생성의 경우 컴퓨터 성능의 한계로 많은 시간과 컴퓨터 지원이 요구된다.
-	본 논문에서는 이러한 문제를 해결하기 위해 로컬 네트워크에서의 전송 프로토콜 최적화 및 전송 이미지 용량 축소 기법을 제안한다.
-	먼저, 드론과 동일한 로컬 네트워크에서의 데이터 전송 효율성을 높이기 위한 새로운 전송 프로토콜을 개발하였다.
-	이 프로토콜은 네트워크 혼잡으로 인한 데이터 패킷 손실이 적은 로컬 네트워크 환경에서, 최소한의 안정성 보장을 통한 전송효율 최대화를 목표로 한다. 실험 결과 해당 프로토콜은 완전한 전송을 보장하면서 기존 TCP 프로토콜 대비 59\%의 전송 속도 향상을 보였다. 
-	다음으로, 이미지 용량 축소를 위해 사전 계산된 특징점 매칭 기반 필요 이미지 선별 방법을 제안하였다.
-	이 방법은 통합 뷰 이미지의 품질 저하를 최소화하면서도 최대 XX\% 이상의 용량 절감을 달성하였다.
-	제안된 방법들은 전송속도 향상과 용량 절감 및 통합 뷰 생성에 필요한 계산 복잡도를 감소시킴으로써, 통합 뷰 생성에 필요한 시간을 절약하고, 낮은 컴퓨터 성능으로도 통합 뷰를 생성할 수 있게 한다.
+	Drone monitoring enables rapid observation of wide areas without requiring dedicated infrastructure, so it can be utilized in various fields such as disaster management, environmental surveillance, and agricultural monitoring.
+    However, with advances in camera technology and increased drone flight times, the collection of massive high-resolution images leads to significant transmission delays and increased computational complexity in generating integrated views.
+    To address these challenges, this thesis proposes (i) a transmission protocol optimized for local network environments and (ii) an image selection technique leveraging pre-computed feature point matching.
+    The proposed transmission protocol maximizes throughput while ensuring minimal reliability in local network environments with low congestion and packet loss, achieving a 59\% improvement in transmission speed compared to conventional TCP while guaranteeing complete data transfer.
+    The image selection technique reduces transmission and storage requirements by up to 90\% while minimizing degradation in integrated view quality, and decreases the time required for integrated view generation.
+    Both techniques have been integrated into the open-source project OpenDroneMap (ODM), demonstrating their applicability in real-world drone monitoring pipelines.
 </p>
         </div>
       </div>

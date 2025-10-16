@@ -250,12 +250,12 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-	Drone monitoring enables rapid observation of wide areas without requiring dedicated infrastructure, so it can be utilized in various fields such as disaster management, environmental surveillance, and agricultural monitoring.
-    However, with advances in camera technology and increased drone flight times, the collection of massive high-resolution images leads to significant transmission delays and increased computational complexity in generating integrated views.
-    To address these challenges, this thesis proposes (i) a transmission protocol optimized for local network environments and (ii) an image selection technique leveraging pre-computed feature point matching.
-    The proposed transmission protocol maximizes throughput while ensuring minimal reliability in local network environments with low congestion and packet loss, achieving a 59\% improvement in transmission speed compared to conventional TCP while guaranteeing complete data transfer.
-    The image selection technique reduces transmission and storage requirements by up to 90\% while minimizing degradation in integrated view quality, and decreases the time required for integrated view generation.
-    Both techniques have been integrated into the open-source project OpenDroneMap (ODM), demonstrating their applicability in real-world drone monitoring pipelines.
+Wide-area monitoring using unmanned aerial vehicles (UAVs) provides an efficient means of rapidly observing large regions without the need for dedicated infrastructure. This approach has been widely utilized in various domains such as disaster management, environmental surveillance, and precision agriculture. However, each image captured by a drone offers only a limited local view, making the generation of an integrated panoramic view through image registration essential for practical monitoring.
+With the increasing resolution of camera sensors, the volume of image data collected has grown substantially, causing excessive processing delays during data transmission and view synthesis. Such delays degrade the responsiveness of UAV-based real-time monitoring systems.
+To address these challenges, this study proposes two complementary techniques that enhance transmission efficiency while minimizing degradation of the integrated view quality.
+First, a transmission protocol optimized for local network environments, termed MIDTP (Massive Irregular Data Transport Protocol), is designed. MIDTP reduces unnecessary control overhead by performing the ACK (acknowledgment) response only for the final packet at the end of data transmission, unlike TCP, which acknowledges every packet. This optimization achieves stable, lossless transmission while improving transfer speed by approximately 59% compared to TCP.
+Second, a selective image transmission method is introduced, which identifies and removes redundant images based on feature-point matching between adjacent frames. This method effectively reduces the total amount of transmitted data and computational load for image registration while maintaining minimal loss in visual quality.
+The proposed techniques were evaluated using a custom UAV image dataset collected under diverse environmental conditions. Experimental results, including NIQE-based image quality assessment and segmentation-based detection tests, demonstrate that the proposed methods significantly reduce data volume while maintaining comparable integrated view quality to that of conventional mechanical image selection approaches.
 </p>
         </div>
       </div>

@@ -402,22 +402,22 @@
         </div>
 
         <!-- End-to-End Performance -->
-        <div class="box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-bottom: 2rem;">
-          <h3 class="title is-4" style="color: white;">
+        <div class="box" style="background: var(--background-accent); border: 2px solid var(--primary-color); margin-bottom: 2rem;">
+          <h3 class="title is-4" style="color: var(--primary-color);">
             <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
             종단 간 성능 (MIDTP + MIS)
           </h3>
-          <div class="content has-text-left" style="color: white;">
+          <div class="content has-text-left">
             <p><strong>실험 조건:</strong> Yard 데이터셋 (9.2GB, 879장)</p>
-            <table style="width: 100%; color: white; margin-top: 1rem;">
+            <table style="width: 100%; margin-top: 1rem; border-collapse: collapse;">
               <thead>
-                <tr style="border-bottom: 2px solid white;">
-                  <th style="color: white; padding: 0.5rem;">시나리오</th>
-                  <th style="color: white; padding: 0.5rem;">데이터 크기</th>
-                  <th style="color: white; padding: 0.5rem;">전송 시간</th>
-                  <th style="color: white; padding: 0.5rem;">정합 시간</th>
-                  <th style="color: white; padding: 0.5rem;">총 시간</th>
-                  <th style="color: white; padding: 0.5rem;">절감률</th>
+                <tr style="border-bottom: 2px solid var(--border-color);">
+                  <th style="padding: 0.5rem; text-align: left;">시나리오</th>
+                  <th style="padding: 0.5rem; text-align: left;">데이터 크기</th>
+                  <th style="padding: 0.5rem; text-align: left;">전송 시간</th>
+                  <th style="padding: 0.5rem; text-align: left;">정합 시간</th>
+                  <th style="padding: 0.5rem; text-align: left;">총 시간</th>
+                  <th style="padding: 0.5rem; text-align: left;">절감률</th>
                 </tr>
               </thead>
               <tbody>
@@ -443,9 +443,9 @@
                   <td style="padding: 0.5rem;">1분 49초</td>
                   <td style="padding: 0.5rem;">4분 57초</td>
                   <td style="padding: 0.5rem;"><strong>6분 46초</strong></td>
-                  <td style="padding: 0.5rem;">92.2%</td>
+                  <td style="padding: 0.5rem;">6.5%</td>
                 </tr>
-                <tr style="background: rgba(255,255,255,0.2); font-weight: bold;">
+                <tr style="background: var(--background-secondary); font-weight: bold;">
                   <td style="padding: 0.5rem;">⭐ 제안 (MIDTP + MIS)</td>
                   <td style="padding: 0.5rem;">873 MB</td>
                   <td style="padding: 0.5rem;">1분 17초</td>
@@ -455,7 +455,7 @@
                 </tr>
               </tbody>
             </table>
-            <p style="margin-top: 1.5rem; font-size: 1.1rem;">
+            <p style="margin-top: 1.5rem; font-size: 1.1rem; color: var(--primary-color);">
               <i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>
               <strong>약 1시간 27분이 소요되던 작업을 6분 14초로 단축!</strong>
             </p>
